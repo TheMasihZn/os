@@ -23,6 +23,13 @@ RUN useradd -m -s /bin/bash gemini && \
     su - gemini -c "cd /home/gemini/WinSur-kde && ./install.sh" && \
     rm -rf /home/gemini/WinSur-kde
 
+
+# Add VOLUME declarations to hint at the necessary runtime mounts,
+# mirroring the bind mounts from the example chroot environment.
+# In a 'docker run' command, these can be mapped from the host,
+# for example: -v /dev:/dev -v /sys:/sys
+VOLUME ["/dev", "/sys", "/proc"]
+
 # Expose the RDP port
 EXPOSE 3389
 
