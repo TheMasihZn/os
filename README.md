@@ -37,3 +37,8 @@ For detailed instructions on building, running, and accessing this environment, 
 *   `.`: Root directory containing the Alpine Linux Desktop Environment Dockerfile and entrypoint script.
 *   `kaagle/`: Contains the Dockerfile and related files for the Kaggle GPU Docker Environment.
 *   `os.iml`, `.idea/`: Project configuration files (e.g., for IntelliJ IDEA).
+
+### 3. Android OS image (AOSP)
+
+Build environment and product recipe for an AOSP image with Holy Cart apps and VLC preinstalled,
+booting first on the Cuttlefish x86_64 emulator. See [aosp/README.md](aosp/README.md).
