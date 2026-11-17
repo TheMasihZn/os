@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copied to <aosp>/.repo/local_manifests/ by scripts/sync-platform.sh.
+     Add your own GitHub repos here so `repo sync` checks them out inside the AOSP tree. -->
+<manifest>
+  <remote name="holycart-github" fetch="https://github.com/TheMasihZn/" />
+
+  <!-- Example: build an app from source as part of the image.
+       The repo needs an Android.bp (android_app) at its root, or ship an APK via vendor/holycart/prebuilt.
+  <project name="AiNoteAndroid" path="vendor/holycart/apps/AiNoteAndroid" remote="holycart-github" revision="main" />
+  -->
+</manifest>

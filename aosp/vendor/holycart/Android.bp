@@ -1,0 +1,20 @@
+// Holy Cart vendor tree: apps preinstalled in the OS image.
+soong_namespace {}
+
+// VLC for Android (GPLv2/LGPLv2.1). APK fetched by aosp/scripts/fetch-prebuilts.sh.
+android_app_import {
+    name: "VLC",
+    apk: "prebuilt/apps/VLC/VLC.apk",
+    presigned: true,           // keep VideoLAN's signature so Play/F-Droid updates install over it
+    product_specific: true,
+    dex_preopt: { enabled: false },
+}
+
+// On-device AI keyboard: drop its release APK at prebuilt/apps/HolyKeyboard/HolyKeyboard.apk
+// and uncomment, then add HolyKeyboard to PRODUCT_PACKAGES in holycart.mk.
+// android_app_import {
+//     name: "HolyKeyboard",
+//     apk: "prebuilt/apps/HolyKeyboard/HolyKeyboard.apk",
+//     presigned: true,
+//     product_specific: true,
+// }
