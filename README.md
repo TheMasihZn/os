@@ -32,8 +32,13 @@ This environment is tailored for data science and machine learning tasks, especi
 For detailed instructions on building, running, and accessing this environment, please refer to:
 [kaagle/README.md](kaagle/README.md)
 
+### 3. Holy OS (AOSP + Android kernel)
+
+Host setup, `repo` sync recipes and build scripts for an AOSP image for the x86_64 emulator, with a self-built Android Common Kernel and the Holy Android apps preinstalled. See [aosp/README.md](aosp/README.md).
+
 ## Project Structure
 
 *   `.`: Root directory containing the Alpine Linux Desktop Environment Dockerfile and entrypoint script.
+*   `aosp/`: Holy OS build: host setup, AOSP/kernel sync and build scripts, `vendor/holy` layer.
 *   `kaagle/`: Contains the Dockerfile and related files for the Kaggle GPU Docker Environment.
 *   `os.iml`, `.idea/`: Project configuration files (e.g., for IntelliJ IDEA).
