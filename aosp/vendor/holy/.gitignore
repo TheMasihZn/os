@@ -1,0 +1,6 @@
+# Built by scripts/40-build-apps.sh / gen-vendor.sh
+prebuilt/*/
+Android.bp
+holy.mk
+holy_*.mk
+AndroidProducts.mk
